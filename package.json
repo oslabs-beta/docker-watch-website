@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
+    "build:export": "next build && next export",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
@@ -22,11 +23,13 @@
   },
   "homepage": "https://github.com/oslabs-beta/docker-watch-website#readme",
   "dependencies": {
+    "clsx": "^1.2.1",
     "next": "^13.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.8",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "autoprefixer": "^10.4.13",
