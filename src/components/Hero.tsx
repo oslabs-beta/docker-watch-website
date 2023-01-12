@@ -27,7 +27,7 @@ export default function Hero (): JSX.Element {
                 Monitor your container&apos;s performance historically and in real-time. Easily deploy as a container.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Download</Button>
+                <Button href="#installation">Download</Button>
                 <Button href="https://github.com/oslabs-beta/docker-watch-app" variant="secondary">
                   View on GitHub
                 </Button>

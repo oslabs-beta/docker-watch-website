@@ -13,12 +13,12 @@ export default function Header (): JSX.Element {
       {/* </div> */}
       <div className="relative flex flex-grow basis-0 items-center">
         <Logo />
-        <div className="ml-16">
+        {/* <div className="ml-16">
           <ul className="flex text-slate-50">
             <li className="mr-6"><Link href="/installation" className="hover:text-sky-400">Installation</Link></li>
             <li className="mr-6"><Link href="/about" className="hover:text-sky-400">About</Link></li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <Link href="https://github.com/oslabs-beta/docker-watch-app" className="group" aria-label="GitHub">
