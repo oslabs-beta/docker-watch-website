@@ -3,16 +3,6 @@ import Image from 'next/image'
 import blurIndigoImage from '@/images/blur-indigo.png'
 import dockerWatchApp from '@/images/docker-watch-app.png'
 
-function TrafficLightsIcon (props): any {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
-      <circle cx="5" cy="5" r="4.5" />
-      <circle cx="21" cy="5" r="4.5" />
-      <circle cx="37" cy="5" r="4.5" />
-    </svg>
-  )
-}
-
 export default function Hero (): JSX.Element {
   return (
     <div className="overflow-hidden bg-slate-900 -mb-32 mt-[-4.5rem] pb-32 pt-[4.5rem] lg:mt-[-4.75rem] lg:pt-[4.75rem]">
@@ -46,16 +36,7 @@ export default function Hero (): JSX.Element {
                 priority
               />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg" />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10" />
-              <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur">
-                <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0" />
-                <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
-                <div className="pl-4 pt-4">
-                  <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
-                  <div className="mt-4 flex space-x-2 text-xs">
-                    text
-                  </div>
-                  <div className="mt-0 flex items-start px-1 text-sm">
+                <div className="mt-0 flex items-start px-1 text-sm">
                     <Image
                       className="relative"
                       src={dockerWatchApp}
@@ -66,8 +47,6 @@ export default function Hero (): JSX.Element {
                       priority
                     />
                   </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

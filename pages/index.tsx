@@ -12,7 +12,7 @@ export default function Layout (): JSX.Element {
   return (
     <>
       <Head>
-        <title>Next.js</title>
+        <title>DockerWatch</title>
       </Head>
       <main>
         {/* <Hero /> */}
