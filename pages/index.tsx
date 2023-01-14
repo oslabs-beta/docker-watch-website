@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 
 const exampleCode = `
-  curl https://raw.githubusercontent.com/oslabs-beta/docker-watch-app/main/install.yaml | docker-compose -p dockerwatch -f - up -d
+curl https://raw.githubusercontent.com/oslabs-beta/docker-watch-app/main/install.yaml | docker-compose -p dockerwatch -f - up -d
 `
 
 export default function Layout (): JSX.Element {
@@ -26,18 +26,18 @@ export default function Layout (): JSX.Element {
         <h3 className="text-2xl font-normal leading-normal mt-0 mb-2 pt-4 text-sky-400">Setup</h3>
         <p>Run the following code in your terminal from the top level directory:</p>
         <Highlight {...defaultProps} code={exampleCode} language="jsx">
-        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className="text-sm" style={style}>
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
+          {({ className, style, tokens, getLineProps, getTokenProps }) => (
+            <pre className="text-sm overflow-scroll pl-4 pr-4" style={style}>
+              {tokens.map((line, i) => (
+                <div {...getLineProps({ line, key: i })}>
+                  {line.map((token, key) => (
+                    <span {...getTokenProps({ token, key })} />
+                  ))}
+                </div>
               ))}
-            </div>
-          ))}
-        </pre>
-        )}
-    </Highlight>
+            </pre>
+          )}
+        </Highlight>
         <h2 className="text-4xl font-normal leading-normal mt-0 mb-2 pt-8 text-sky-400">How to Use</h2>
         <ol>
           <li>After installing, open your web brower and visit <Link className="text-slate-100" href="http://localhost:8855">http://localhost:8855</Link></li>
